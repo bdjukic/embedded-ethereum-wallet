@@ -1,8 +1,4 @@
-# embedded-ethereum-wallet
-
-A Particle library for Embedded Ethereum Wallet
-
-## Welcome to your Embedded Ethereum Wallet library!
+# Ethereum wallet library for Particle Photon
 
 You can find example usage of the library inside [examples](examples)
 
@@ -10,7 +6,7 @@ You can find example usage of the library inside [examples](examples)
 
 Add the embedded-ethereum-wallet library to your project and follow this simple example:
 
-```
+`
 // First, we need to create public key from the private one
 vector<uint8_t> publicKey = CryptoHelper::generateAddress(PRIVATE_KEY);
 
@@ -42,7 +38,7 @@ String rawTransaction = transaction.getRaw(nonce, gasPrice, gasLimit, &to, &valu
 
 // Raw transaction is ready to be sent to JSON-RPC method call eth_sendRawTransaction
 Serial.printlnf("Signed raw transaction: %s", rawTransaction);
-```
+`
 
 See the [examples](examples) folder for more details.
 
@@ -50,7 +46,7 @@ See the [examples](examples) folder for more details.
 
 To get started, [clone the library from GitHub to your local machine](https://github.com/bdjukic/embedded-ethereum-wallet).
 
-## LICENSE
+## License
 Copyright 2018 Bogdan Djukic
 
 Licensed under the GNU GENERAL PUBLIC LICENSE
